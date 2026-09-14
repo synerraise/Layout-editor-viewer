@@ -1,5 +1,20 @@
 # Layout AI Agent — Public Releases
 
+## Download for Windows
+
+[**Download Layout AI Agent 0.1.0 Early Access**](https://github.com/synerraise/Layout-editor-viewer/releases/download/v0.1.0/lagent_0.1.0_x64-setup.exe)
+
+- Platform: Windows x86-64
+- Status: Early Access pre-release
+- Installer: unsigned; Windows SmartScreen may display a warning
+- [Release notes, checksum, and all assets](https://github.com/synerraise/Layout-editor-viewer/releases/tag/v0.1.0)
+
+Verify the downloaded installer before running it. Its SHA-256 value is:
+
+```text
+C0C37AB178A51B0770289C317958A2C20523DC984832B592C6AF5496CFB428AB
+```
+
 This repository distributes binary trial releases of **Layout AI Agent**, a
 cross-platform GDSII layout viewer and basic editor.
 
