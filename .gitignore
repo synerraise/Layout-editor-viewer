@@ -1,0 +1,58 @@
+# Layout AI Agent public distribution repository
+#
+# Commit release documentation and metadata. Upload binaries, archives, SBOMs,
+# signatures, and attestations as GitHub Release assets instead of Git objects.
+
+# Native executables and installers
+*.exe
+*.msi
+*.msix
+*.appx
+*.appxbundle
+*.dmg
+*.pkg
+*.AppImage
+*.deb
+*.rpm
+
+# Portable archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tar.xz
+*.tgz
+
+# Generated supply-chain artifacts
+*.spdx.json
+*.cdx.json
+*.sig
+*.asc
+*.attestation
+
+# Local packaging and staging directories
+/artifacts/
+/dist/
+/packages/
+/staging/
+/target/
+
+# Logs and interrupted downloads
+*.log
+*.tmp
+*.part
+
+# Signing credentials must never be committed
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
