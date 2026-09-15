@@ -22,6 +22,10 @@ Create a layout, open a native database, or import a GDS stream, then choose the
 - Select a cell in the Cells panel. Press F or use Fit View to center its complete bounding box.
 - Choose Edit mode when changes are required, or View-only mode for protected inspection.
 
+![Welcome screen: choose New Layout, Open OA Database, or Stream In GDS to begin.](images/welcome.png)
+
+*Welcome screen: choose New Layout, Open OA Database, or Stream In GDS to begin.*
+
 ## Files & Documents
 
 Native documents and GDS streams have different save behavior.
@@ -37,6 +41,10 @@ Use direct canvas controls for detailed inspection without changing layout data.
 - Zoom with the mouse wheel, toolbar buttons, Ctrl++ or Ctrl+-, and keep the pointer over the area of interest.
 - Use Zoom Box to drag a region to fit; a single primary click zooms in at the pointer.
 - Pan with the middle or secondary mouse button. Arrow keys navigate the viewport; F fits the active cell.
+
+![Full-layout overview: Cells on the left, canvas in the center, and layer controls on the right. Press F or F2 to fit the active view.](images/layout-overview.png)
+
+*Full-layout overview: Cells on the left, canvas in the center, and layer controls on the right. Press F or F2 to fit the active view.*
 
 ## Selection
 
@@ -129,6 +137,10 @@ The Layers panel controls participation and the Layer Tools area controls presen
 - Use Edit > Layer > Clear Layer to remove geometry but retain the active layer definition. Delete Layer removes both geometry and its display definition; Copy Layer duplicates all source-layer geometry across the library.
 - Load or save .lyp layer properties from File. Saved properties preserve the application's visible style settings.
 
+![Detailed layout view: select a layer on the right, then adjust colors and stipple in the Layer Toolbox below. Display colors are presentation settings, not electrical verification results.](images/layout-detail.png)
+
+*Detailed layout view: select a layer on the right, then adjust colors and stipple in the Layer Toolbox below. Display colors are presentation settings, not electrical verification results.*
+
 ## Cells & Reports
 
 Maintain cell definitions and inspect document-level information without navigating away from the canvas.
@@ -216,3 +228,9 @@ Use the Support and Security documents in the public repository.
 - Never disclose proprietary layouts without authorization. A small non-confidential reproduction is preferable.
 - For missing geometry, check active cell, layer visibility, hierarchy detail, text visibility, and progressive completion. Press F to fit.
 - For save recovery, inspect the paths reported by the recovery dialog and preserve the original and recovery files before deciding which copy to use.
+
+## Screenshot credits
+
+Example layout: UoM eFPGA from the FPGA-Research eFPGA: RTL-to-GDS with SKY130 project, published upstream under Apache 2.0. Screenshots rendered using Layout AI Agent by SynerRaise; no endorsement by upstream contributors is implied.
+
+[Layout source](https://github.com/FPGA-Research/eFPGA---RTL-to-GDS-with-SKY130) · [License copy](licenses/eFPGA-Apache-2.0.txt). Screenshots illustrate an Early Access interface; appearance may differ by build. Images are embedded in the HTML edition for offline viewing.
