@@ -15,6 +15,13 @@ Verify the downloaded installer before running it. Its SHA-256 value is:
 C0C37AB178A51B0770289C317958A2C20523DC984832B592C6AF5496CFB428AB
 ```
 
+## User guide
+
+[Read the user guide](docs/user-guide.md) · [Download the HTML guide](https://raw.githubusercontent.com/synerraise/Layout-editor-viewer/main/docs/user-guide.html)
+
+For HTML, save the file and open it in a browser. Use Print > Save as PDF for a printable copy.
+The guide covers the current Early Access interface; older builds may differ.
+
 ## Preview
 
 ### Welcome screen
