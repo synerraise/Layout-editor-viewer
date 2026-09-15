@@ -28,6 +28,13 @@ C0C37AB178A51B0770289C317958A2C20523DC984832B592C6AF5496CFB428AB
 ### Detailed layout and layer controls
 
 ![Detailed GDSII hierarchy with layer controls](docs/images/layout-detail.png)
+The layout overview and detail previews show UoM eFPGA from
+[FPGA-Research's eFPGA: RTL-to-GDS with SKY130 project](https://github.com/FPGA-Research/eFPGA---RTL-to-GDS-with-SKY130).
+The upstream project is published under [Apache License 2.0](docs/licenses/eFPGA-Apache-2.0.txt).
+Images were rendered using Layout AI Agent by SynerRaise; display colors and
+visible layers reflect the application's settings. The layout is credited to
+its upstream contributors. No endorsement by those contributors is implied.
+These third-party layout terms are separate from the proprietary application license.
 
 This repository distributes binary trial releases of **Layout AI Agent**, a
 cross-platform GDSII layout viewer and basic editor.
