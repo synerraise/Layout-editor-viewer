@@ -15,6 +15,20 @@ Verify the downloaded installer before running it. Its SHA-256 value is:
 C0C37AB178A51B0770289C317958A2C20523DC984832B592C6AF5496CFB428AB
 ```
 
+## Preview
+
+### Welcome screen
+
+![Layout AI Agent welcome screen](docs/images/welcome.png)
+
+### Full-layout overview
+
+![Large hierarchical GDSII layout in Layout AI Agent](docs/images/layout-overview.png)
+
+### Detailed layout and layer controls
+
+![Detailed GDSII hierarchy with layer controls](docs/images/layout-detail.png)
+
 This repository distributes binary trial releases of **Layout AI Agent**, a
 cross-platform GDSII layout viewer and basic editor.
 
