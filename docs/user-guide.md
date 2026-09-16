@@ -1,6 +1,6 @@
 # Layout AI Agent — User Guide
 
-**SynerRaise · Early Access · September 15, 2026**
+**SynerRaise · Early Access · Updated September 17, 2026**
 
 [Download HTML guide](user-guide.html) — save the HTML file and open it in a browser. Use Print → Save as PDF for a printable copy.
 
@@ -14,6 +14,10 @@ Layout AI Agent (Lagent) is developed and published by SynerRaise. This guide co
 - Download the installer from the official public releases page, compare its SHA-256 checksum with the release checksum, and run it for the current Windows user. The Early Access installer is unsigned.
 - Keep the original GDS unchanged. Save edits to a separate native project, export to a new GDS path, and reopen the export to inspect it before external verification.
 
+![Read this first screenshot](images/guide/report-problem.jpg)
+
+*Help > About identifies the version and Early Access scope. These captures use a local development build, not a verified copy of the public installer.*
+
 ## Getting Started
 
 Create a layout, open a native database, or import a GDS stream, then choose the cell you want to view.
@@ -22,9 +26,9 @@ Create a layout, open a native database, or import a GDS stream, then choose the
 - Select a cell in the Cells panel. Press F or use Fit View to center its complete bounding box.
 - Choose Edit mode when changes are required, or View-only mode for protected inspection.
 
-![Welcome screen: choose New Layout, Open OA Database, or Stream In GDS to begin.](images/welcome.png)
+![Getting Started screenshot](images/guide/getting-started.jpg)
 
-*Welcome screen: choose New Layout, Open OA Database, or Stream In GDS to begin.*
+*The welcome screen offers New Layout, Open OA Database, and Stream In GDS.*
 
 ## Files & Documents
 
@@ -34,6 +38,10 @@ Native documents and GDS streams have different save behavior.
 - Stream Out writes either the complete library or a selected root cell and its referenced hierarchy to GDS.
 - The title and status bar indicate the active file, current mode, dirty state, and operation progress.
 
+![Files & Documents screenshot](images/guide/files-documents.jpg)
+
+*New Layout sets the library name, top cell, database unit, and initial layers before creation.*
+
 ## Pan & Zoom
 
 Use direct canvas controls for detailed inspection without changing layout data.
@@ -42,9 +50,9 @@ Use direct canvas controls for detailed inspection without changing layout data.
 - Use Zoom Box to drag a region to fit; a single primary click zooms in at the pointer.
 - Pan with the middle or secondary mouse button. Arrow keys navigate the viewport; F fits the active cell.
 
-![Full-layout overview: Cells on the left, canvas in the center, and layer controls on the right. Press F or F2 to fit the active view.](images/layout-overview.png)
+![Pan & Zoom screenshot](images/guide/pan-zoom.jpg)
 
-*Full-layout overview: Cells on the left, canvas in the center, and layer controls on the right. Press F or F2 to fit the active view.*
+*The synthetic GUIDE_TOP layout fitted to the canvas. Four LOGIC_UNIT placements make hierarchy and navigation examples easy to follow.*
 
 ## Selection
 
@@ -71,6 +79,10 @@ Select one or many direct objects and instances in the active cell.
 - Press Shift+F2 or use Display > Fit Selection to center selected geometry, text, and transformed instances.
 - Switch to Move in Edit mode to drag the selection, or use arrow keys. Delete removes selected objects and Ctrl+Z restores them.
 
+![Selection screenshot](images/guide/selection.jpg)
+
+*The selected direct boundary has a white outline. The status bar identifies its index and active cell.*
+
 ## Search Objects
 
 Find layout objects by geometry, layer, label, or referenced-cell criteria without modifying the document.
@@ -82,6 +94,10 @@ Find layout objects by geometry, layer, label, or referenced-cell criteria witho
 - Choose a row and use Select to highlight it or Fit to center it. Select All Results highlights the bounded result set. Search remains modeless, so the canvas can still be panned or zoomed outside the dialog.
 - Results truncated means additional matches exist beyond the 2,000 displayed rows. Search incomplete means the guarded definition scan stopped early, so even zero displayed results are not a definitive no-match answer.
 
+![Search Objects screenshot](images/guide/search-objects.jpg)
+
+*Search Objects lists direct and descendant results with hierarchy paths, types, and layers. This example searches the visible hierarchy.*
+
 ## Properties
 
 Inspect or edit object, ruler, and cell data through one staged dialog.
@@ -91,6 +107,10 @@ Inspect or edit object, ruler, and cell data through one staged dialog.
 - Use Previous and Next for a multi-selection. Apply commits without closing; OK commits and closes; Cancel discards staged edits.
 - Apply to Same Type copies compatible edited fields while preserving each target's own geometry, placement, and reference identity.
 
+![Properties screenshot](images/guide/properties.jpg)
+
+*Properties displays boundary vertices, layer/datatype, and user properties. Changes are staged until Apply or OK.*
+
 ## Cell Hierarchy
 
 Control how much hierarchy is drawn and navigate through referenced cells.
@@ -98,6 +118,10 @@ Control how much hierarchy is drawn and navigate through referenced cells.
 - Use Full Detail, Root Box, Top Level, More Detail, and Less Detail to control hierarchy expansion.
 - Enable Instance Labels to show direct instance boxes and names, then select an instance and press Ctrl+D to descend.
 - Choose Child selects an immediate child explicitly. Ascend, Parent, Back, and Forward restore navigation context.
+
+![Cell Hierarchy screenshot](images/guide/cell-hierarchy.jpg)
+
+*LOGIC_UNIT is open as the active child cell; the Cells panel retains its parent GUIDE_TOP.*
 
 ## Locate Cell Instances
 
@@ -107,6 +131,10 @@ Highlight every placement of a chosen cell within the currently displayed hierar
 - Choose Locate and Fit to highlight the placements and fit their combined bounds in one action.
 - Use Clear Highlights from the cell context menu, or press Escape, to remove the locator overlay.
 - Locating is an on-demand view operation: it does not select, edit, or retessellate the layout geometry.
+
+![Locate Cell Instances screenshot](images/guide/locate-instances.jpg)
+
+*Locate Instances highlights all four LOGIC_UNIT placements in amber without turning the placements into an editing selection.*
 
 ## Editing Tools
 
@@ -119,6 +147,10 @@ Edit mode provides native geometry creation and modification tools.
 - Copy and Cut operate on the complete direct-object selection. Ctrl+V starts an overlay preview that follows the snapped pointer; click once to commit or use Escape/secondary-click to cancel.
 - Use Paste in Place (Ctrl+Shift+V) to retain original coordinates. Paste, Paste in Place, and Duplicate each commit as one undoable edit with one geometry refresh.
 
+![Editing Tools screenshot](images/guide/editing-tools.jpg)
+
+*Box Options shows the target layer and grid setting. Done hides the options; Cancel returns to Select.*
+
 ## Rulers, Grid & Units
 
 Measurement and snapping tools improve placement accuracy without changing display scale.
@@ -126,6 +158,10 @@ Measurement and snapping tools improve placement accuracy without changing displ
 - Ruler uses two points or drag-and-release. Shift constrains orthogonally and Ctrl constrains to 45-degree angles.
 - Select an existing ruler and press Delete to remove it, or use Edit > Clear All Rulers.
 - Enable Snap to Grid and choose automatic or fixed spacing. Display Unit switches editor values between DBU and nanometers.
+
+![Rulers, Grid & Units screenshot](images/guide/rulers-grid-units.jpg)
+
+*A completed horizontal ruler spans 14,000 nm in the synthetic cell. The bottom readout also reports the measured delta.*
 
 ## Layers & Styles
 
@@ -137,9 +173,9 @@ The Layers panel controls participation and the Layer Tools area controls presen
 - Use Edit > Layer > Clear Layer to remove geometry but retain the active layer definition. Delete Layer removes both geometry and its display definition; Copy Layer duplicates all source-layer geometry across the library.
 - Load or save .lyp layer properties from File. Saved properties preserve the application's visible style settings.
 
-![Detailed layout view: select a layer on the right, then adjust colors and stipple in the Layer Toolbox below. Display colors are presentation settings, not electrical verification results.](images/layout-detail.png)
+![Layers & Styles screenshot](images/guide/layers-styles.jpg)
 
-*Detailed layout view: select a layer on the right, then adjust colors and stipple in the Layer Toolbox below. Display colors are presentation settings, not electrical verification results.*
+*Layer 2/0 is active. The Layer Toolbox displays its color, frame color, and stipple choices beside the layout.*
 
 ## Cells & Reports
 
@@ -150,6 +186,10 @@ Maintain cell definitions and inspect document-level information without navigat
 - Use File > Layout Statistics to review structure, top-cell, layer/datatype, element-type, and active-view bounds information.
 - Use File > Screenshot to File to save the current canvas as PNG, or Screenshot to Clipboard to paste it into another application. Complex views wait for progressive layer preparation to complete before capture.
 
+![Cells & Reports screenshot](images/guide/cells-reports.jpg)
+
+*Layout Statistics reports two structures, five layer/datatype pairs, and 14 stored elements. Repeated placements do not duplicate stored child elements.*
+
 ## View & Display
 
 View controls interface and drawing aids; Display controls hierarchy and canvas navigation.
@@ -159,6 +199,10 @@ View controls interface and drawing aids; Display controls hierarchy and canvas 
 - Display provides fit, redraw, position navigation, instance labels, hierarchy depth, and display history.
 - Use Display > Global Orientation to rotate the complete presentation in 90-degree steps, mirror it at the X axis, or reset it. This does not modify stored GDS coordinates or geometry.
 - Enable View > Navigator to show an isolated bounds-only minimap. Its amber rectangle tracks the current viewport; click inside the minimap to recenter the canvas.
+
+![View & Display screenshot](images/guide/view-display.jpg)
+
+*Navigator shows the current zoomed viewport as an amber rectangle within the active cell bounds.*
 
 ## Bookmarks, Recent Files & Session
 
@@ -171,6 +215,10 @@ Return to review locations and resume the application without rebuilding your wo
 - Session data is application configuration, not part of the GDS or native project. Unsaved geometry still requires Save or Stream Out before exit.
 - Use View > Navigator for a movable and resizable overview. The amber rectangle represents the main canvas viewport; click within the layout bounds to recenter. Navigator uses cached bounds and remains independent of main-layout rendering.
 
+![Bookmarks, Recent Files & Session screenshot](images/guide/bookmarks-session.jpg)
+
+*Add View Bookmark accepts a descriptive name for the current view. This example is staged before Add.*
+
 ## Save & Recovery
 
 Background persistence protects the interface and stages writes before replacing a valid destination.
@@ -178,6 +226,10 @@ Background persistence protects the interface and stages writes before replacing
 - Wait for the save progress dialog to complete, or cancel before the destination replacement stage when cancellation is available.
 - If edits occur during a background save, the document remains marked dirty so newer work is not reported as saved.
 - When interrupted-save artifacts are detected, review the recovery dialog and its paths before continuing normal work.
+
+![Save & Recovery screenshot](images/guide/save-recovery.jpg)
+
+*The Unsaved Changes prompt offers Save, Discard, and Cancel before replacing a document. This is a save-decision example, not an interrupted-save recovery dialog.*
 
 ## Keyboard Shortcuts
 
@@ -189,6 +241,10 @@ Common operations are available without leaving the canvas.
 - Ctrl+D descends, D opens child selection, Ctrl+A ascends, Escape cancels a tool, and arrow keys navigate or move a selection.
 - Q opens Properties for the canvas selection, selected ruler, or active Cells-panel cell.
 
+![Keyboard Shortcuts screenshot](images/guide/keyboard-shortcuts.jpg)
+
+*Help > Assistant includes a Keyboard Shortcuts topic. Scroll within the Help window to read the rest; the complete shortcut list is also in the text above.*
+
 ## Troubleshooting
 
 Use the status bar and a few display checks to diagnose common viewing problems.
@@ -197,6 +253,10 @@ Use the status bar and a few display checks to diagnose common viewing problems.
 - If selection fails, confirm Select mode is active. Selection targets direct objects or instances in the active cell, not flattened descendant geometry.
 - If a drawing options window was hidden with Done, press F3 or use View > Tool Options to restore it.
 - For large files, allow Dynamic Layer Rendering to finish progressive layers before judging visual completeness.
+
+![Troubleshooting screenshot](images/guide/troubleshooting.jpg)
+
+*The Assistant troubleshooting topic starts with checks for visibility, hierarchy depth, and active-cell selection.*
 
 ## Release Scope & Safe Workflow
 
@@ -207,6 +267,10 @@ Use the Early Access release for focused GDSII review and basic editing, with an
 - Keep the source GDS unchanged. Import it, save working edits to a separate native OA-like project, and export each review candidate to a new GDS file.
 - Reopen the exported GDS and verify the expected top cell, hierarchy, layers, object counts, edited regions, labels, paths, and instance transformations.
 - Archive the original GDS, native project, exported GDS, application version, and relevant logs together. Complete foundry-qualified verification in established EDA tools before fabrication.
+
+![Release Scope & Safe Workflow screenshot](images/guide/release-scope.jpg)
+
+*The dedicated Release Scope & Safe Workflow window explains supported use, external verification, and preserving original files. Scroll to read the complete guidance.*
 
 ## Quick reference
 
@@ -220,6 +284,10 @@ Use Ctrl+F in your browser to find a command. Arrow keys navigate when nothing i
 - CACHED and PROGRESSIVE are rendering status labels. Wait for progressive layers to finish before judging completeness.
 - Trace Net provides an inspection overlay, not electrical verification or signoff.
 
+![Quick reference screenshot](images/guide/quick-reference.jpg)
+
+*Help > Show All Tips provides a scrollable command catalog. The screenshot shows the beginning of the catalog.*
+
 ## Report a problem
 
 Use the Support and Security documents in the public repository.
@@ -229,8 +297,12 @@ Use the Support and Security documents in the public repository.
 - For missing geometry, check active cell, layer visibility, hierarchy detail, text visibility, and progressive completion. Press F to fit.
 - For save recovery, inspect the paths reported by the recovery dialog and preserve the original and recovery files before deciding which copy to use.
 
-## Screenshot credits
+![Report a problem screenshot](images/guide/report-problem.jpg)
 
-Example layout: UoM eFPGA from the FPGA-Research eFPGA: RTL-to-GDS with SKY130 project, published upstream under Apache 2.0. Screenshots rendered using Layout AI Agent by SynerRaise; no endorsement by upstream contributors is implied.
+*Include the version shown in Help > About when reporting a problem, together with platform and reproduction steps.*
 
-[Layout source](https://github.com/FPGA-Research/eFPGA---RTL-to-GDS-with-SKY130) · [License copy](licenses/eFPGA-Apache-2.0.txt). Screenshots illustrate an Early Access interface; appearance may differ by build. Images are embedded in the HTML edition for offline viewing.
+## Screenshot notes
+
+Screenshots captured directly from Layout AI Agent on Windows during September 16–17, 2026. About reports version 0.1.0, but these images use a local development build and are not evidence of the published installer’s exact interface or qualification. Geometry examples use a synthetic demonstration layout created for this guide; no third-party chip design is depicted in these guide screenshots. Screenshots show actual application states, including scrollable dialogs whose full content is available inside the application.
+
+The HTML images are embedded for offline viewing. Existing third-party preview credits in the repository README remain applicable to those separate previews.
