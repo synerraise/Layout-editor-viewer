@@ -1,5 +1,7 @@
 # Layout AI Agent — Public Releases
 
+[**App homepage**](https://synerraise.github.io/Layout-editor-viewer/) · [**Online user guide**](https://synerraise.github.io/Layout-editor-viewer/user-guide.html)
+
 ## Download for Windows
 
 [**Download Layout AI Agent 0.1.0 Early Access**](https://github.com/synerraise/Layout-editor-viewer/releases/download/v0.1.0/lagent_0.1.0_x64-setup.exe)
