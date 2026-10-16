@@ -56,3 +56,6 @@ desktop.ini
 .vscode/
 *.swp
 *~
+
+# Private account recovery codes
+github-recovery-codes.txt
